@@ -1,0 +1,111 @@
+
+****** PlanAhead v14.6 (64-bit)
+  **** Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/ISE/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/ISE/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/ISE/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/ISE/ExcitedCPU/pa.fromNetlist.tcl
+# create_project -name ExcitedCPU -dir "D:/ISE/ExcitedCPU/planAhead_run_5" -part xc3s1200efg320-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/ISE/ExcitedCPU/CPU.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/ISE/ExcitedCPU} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "CPU.ucf" [current_fileset -constrset]
+Adding file 'D:/ISE/ExcitedCPU/CPU.ucf' to fileset 'constrs_1'
+# add_files [list {CPU.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s1200efg320-4
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design CPU.ngc ...
+WARNING:NetListWriters:298 - No output is written to CPU.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus uid_exe_register/Out_Imm<15 : 0> on
+   block CPU is not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus uram1/data_src<7 : 0> on block CPU is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   uram1/uvga/uController/Mcompar_h_count_cmp_lt0000_lut<4 : 0> on block CPU is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus
+   uram1/uvga/uController/Mcompar_h_sync_cmp_gt0000_lut<4 : 0> on block CPU is
+   not reconstructed, because there are some missing bus signals.
+WARNING:NetListWriters:306 - Signal bus uram1/uvga/uTextGen/writeAddr<8 : 0> on
+   block CPU is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file CPU.edif ...
+ngc2edif: Total memory usage is 84092 kilobytes
+
+Parsing EDIF File [./planAhead_run_5/ExcitedCPU.data/cache/CPU_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_5/ExcitedCPU.data/cache/CPU_ngc_zx.edif]
+CRITICAL WARNING: [Designutils 20-1022] Could not resolve non-primitive black box cell 'video_ram' instantiated in module 'uram1/uvga/uTextGen/uvideo_ram'.
+Resolution: File names need to match cell names: an EDIF definition will be found in video_ram.edf; a HDL definition may be placed in any Verilog/VHDL file.
+INFO: [Designutils 20-910] Reading macro library D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'CPU' is not ideal for floorplanning, since the cellview 'CPU' defined in file 'CPU.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/ClockRegion.xml
+Loading clock buffers from D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/ClockBuffers.xml
+Loading package from D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/fg320/Package.xml
+Loading io standards from D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/fg320/SSORules.xml
+Loading list of drcs for the architecture : D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/ISE/ExcitedCPU/CPU.ucf]
+Finished Parsing UCF File [D:/ISE/ExcitedCPU/CPU.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 35f4ba7a
+link_design: Time (s): elapsed = 00:00:09 . Memory (MB): peak = 583.391 ; gain = 132.984
+startgroup
+set_property package_pin A4 [get_ports {vga_r[2]}]
+endgroup
+startgroup
+set_property package_pin A4 [get_ports {vga_r[2]}]
+endgroup
+startgroup
+set_property package_pin C3 [get_ports {vga_r[1]}]
+endgroup
+startgroup
+set_property package_pin A7 [get_ports {vga_r[0]}]
+endgroup
+startgroup
+set_property package_pin C5 [get_ports {vga_g[2]}]
+endgroup
+startgroup
+set_property package_pin C4 [get_ports {vga_g[1]}]
+endgroup
+startgroup
+set_property package_pin B4 [get_ports {vga_g[0]}]
+endgroup
+startgroup
+set_property package_pin B6 [get_ports {vga_b[2]}]
+endgroup
+startgroup
+set_property package_pin A6 [get_ports {vga_b[1]}]
+endgroup
+startgroup
+set_property package_pin D5 [get_ports {vga_b[0]}]
+endgroup
+startgroup
+set_property package_pin D6 [get_ports vga_h_sync]
+endgroup
+startgroup
+set_property package_pin E6 [get_ports vga_v_sync]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Mon Dec 08 00:28:27 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead

@@ -1,0 +1,757 @@
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 
+xst -intstyle ise -ifn "D:/ISE/ExcitedCPU/CPU.xst" -ofn "D:/ISE/ExcitedCPU/CPU.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd ipcore_dir -nt timestamp -uc CPU.ucf -p xc3s1200e-fg320-4 CPU.ngc CPU.ngd  
+map -intstyle ise -p xc3s1200e-fg320-4 -cm area -ir off -pr off -c 100 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" -o CPU_map.ncd CPU.ngd CPU.pcf 
+par -w -intstyle ise -ol high -t 1 -smartguide "D:/ISE/ExcitedCPU/CPU_guide.ncd" CPU_map.ncd CPU.ncd CPU.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf 
+bitgen -intstyle ise -f CPU.ut CPU.ncd 

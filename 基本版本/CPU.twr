@@ -1,0 +1,383 @@
+--------------------------------------------------------------------------------
+Release 14.6 Trace  (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+
+D:\ISE\14.6\ISE_DS\ISE\bin\nt64\unwrapped\trce.exe -intstyle ise -v 3 -s 4 -n 3
+-fastpaths -xml CPU.twx CPU.ncd -o CPU.twr CPU.pcf -ucf CPU.ucf
+
+Design file:              CPU.ncd
+Physical constraint file: CPU.pcf
+Device,package,speed:     xc3s1200e,fg320,-4 (PRODUCTION 1.27 2013-06-08)
+Report level:             verbose report
+
+Environment Variable      Effect 
+--------------------      ------ 
+NONE                      No environment variables were set
+--------------------------------------------------------------------------------
+
+INFO:Timing:2698 - No timing constraints found, doing default enumeration.
+INFO:Timing:3412 - To improve timing, see the Timing Closure User Guide (UG612).
+INFO:Timing:2752 - To get complete path coverage, use the unconstrained paths 
+   option. All paths that are not constrained will be reported in the 
+   unconstrained paths section(s) of the report.
+INFO:Timing:3339 - The clock-to-out numbers in this timing report are based on 
+   a 50 Ohm transmission line loading model.  For the details of this model, 
+   and for more information on accounting for different loading conditions, 
+   please see the device datasheet.
+INFO:Timing:3390 - This architecture does not support a default System Jitter 
+   value, please add SYSTEM_JITTER constraint to the UCF to modify the Clock 
+   Uncertainty calculation.
+INFO:Timing:3389 - This architecture does not support 'Discrete Jitter' and 
+   'Phase Error' calculations, these terms will be zero in the Clock 
+   Uncertainty calculation.  Please make appropriate modification to 
+   SYSTEM_JITTER to account for the unsupported Discrete Jitter and Phase 
+   Error.
+
+
+
+Data Sheet report:
+-----------------
+All values displayed in nanoseconds (ns)
+
+Clock clk_ori to Pad
+------------+------------+------------------+--------+
+            | clk (edge) |                  | Clock  |
+Destination |   to PAD   |Internal Clock(s) | Phase  |
+------------+------------+------------------+--------+
+RAM2_EN     |   10.257(R)|clk_ori_BUFGP     |   0.000|
+RAM2_OE     |   11.853(R)|clk_ori_BUFGP     |   0.000|
+RAM2_WE     |   11.455(R)|clk_ori_BUFGP     |   0.000|
+ram1_en     |   11.894(R)|clk_ori_BUFGP     |   0.000|
+------------+------------+------------------+--------+
+
+Clock rst to Pad
+------------+------------+------------------------+--------+
+            | clk (edge) |                        | Clock  |
+Destination |   to PAD   |Internal Clock(s)       | Phase  |
+------------+------------+------------------------+--------+
+debug_pc<13>|   21.925(R)|ucomparator/Jump_and0000|   0.000|
+debug_pc<15>|   22.965(R)|ucomparator/Jump_and0000|   0.000|
+------------+------------+------------------------+--------+
+
+Clock to Setup on destination clock clk_ori
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+clk_ori        |    1.612|         |         |         |
+---------------+---------+---------+---------+---------+
+
+Clock to Setup on destination clock rst
+---------------+---------+---------+---------+---------+
+               | Src:Rise| Src:Fall| Src:Rise| Src:Fall|
+Source Clock   |Dest:Rise|Dest:Rise|Dest:Fall|Dest:Fall|
+---------------+---------+---------+---------+---------+
+rst            |    0.847|    0.847|         |         |
+---------------+---------+---------+---------+---------+
+
+Pad to Pad
+---------------+---------------+---------+
+Source Pad     |Destination Pad|  Delay  |
+---------------+---------------+---------+
+RAM2_Data<0>   |debug_pc<0>    |   12.001|
+RAM2_Data<1>   |debug_pc<1>    |   13.617|
+RAM2_Data<2>   |debug_pc<2>    |   12.638|
+RAM2_Data<3>   |debug_pc<3>    |   12.923|
+RAM2_Data<4>   |debug_pc<4>    |   11.953|
+RAM2_Data<5>   |debug_pc<5>    |   11.628|
+RAM2_Data<6>   |debug_pc<6>    |   12.309|
+RAM2_Data<7>   |debug_pc<7>    |   12.117|
+RAM2_Data<8>   |debug_pc<8>    |   11.255|
+RAM2_Data<9>   |debug_pc<9>    |   12.509|
+RAM2_Data<10>  |debug_pc<10>   |   12.006|
+RAM2_Data<11>  |debug_pc<11>   |   13.889|
+RAM2_Data<12>  |debug_pc<12>   |   13.100|
+RAM2_Data<13>  |debug_pc<13>   |   13.695|
+RAM2_Data<14>  |debug_pc<14>   |   11.780|
+RAM2_Data<15>  |debug_pc<15>   |   12.848|
+Ram1DataM<0>   |debug_pc<0>    |   10.780|
+Ram1DataM<1>   |debug_pc<1>    |    9.942|
+Ram1DataM<2>   |debug_pc<2>    |   10.138|
+Ram1DataM<3>   |debug_pc<3>    |   11.388|
+Ram1DataM<4>   |debug_pc<4>    |   10.733|
+Ram1DataM<5>   |debug_pc<5>    |    9.993|
+Ram1DataM<6>   |debug_pc<6>    |   10.274|
+Ram1DataM<7>   |debug_pc<7>    |   11.007|
+Ram1DataM<8>   |debug_pc<8>    |   12.404|
+Ram1DataM<9>   |debug_pc<9>    |   10.512|
+Ram1DataM<10>  |debug_pc<10>   |    9.982|
+Ram1DataM<11>  |debug_pc<11>   |   10.517|
+Ram1DataM<12>  |debug_pc<12>   |   13.286|
+Ram1DataM<13>  |debug_pc<13>   |   11.827|
+Ram1DataM<14>  |debug_pc<14>   |   12.046|
+Ram1DataM<15>  |debug_pc<15>   |   10.543|
+debug_input<0> |debug_pc<0>    |   20.027|
+debug_input<0> |debug_pc<1>    |   20.123|
+debug_input<0> |debug_pc<2>    |   18.691|
+debug_input<0> |debug_pc<3>    |   20.567|
+debug_input<0> |debug_pc<4>    |   20.536|
+debug_input<0> |debug_pc<5>    |   20.083|
+debug_input<0> |debug_pc<6>    |   19.217|
+debug_input<0> |debug_pc<7>    |   21.130|
+debug_input<0> |debug_pc<8>    |   22.311|
+debug_input<0> |debug_pc<9>    |   20.904|
+debug_input<0> |debug_pc<10>   |   20.469|
+debug_input<0> |debug_pc<11>   |   20.308|
+debug_input<0> |debug_pc<12>   |   24.996|
+debug_input<0> |debug_pc<13>   |   22.938|
+debug_input<0> |debug_pc<14>   |   23.758|
+debug_input<0> |debug_pc<15>   |   23.393|
+debug_input<1> |debug_pc<0>    |   18.345|
+debug_input<1> |debug_pc<1>    |   19.203|
+debug_input<1> |debug_pc<2>    |   17.015|
+debug_input<1> |debug_pc<3>    |   18.660|
+debug_input<1> |debug_pc<4>    |   19.034|
+debug_input<1> |debug_pc<5>    |   18.659|
+debug_input<1> |debug_pc<6>    |   17.963|
+debug_input<1> |debug_pc<7>    |   19.727|
+debug_input<1> |debug_pc<8>    |   21.041|
+debug_input<1> |debug_pc<9>    |   18.696|
+debug_input<1> |debug_pc<10>   |   17.997|
+debug_input<1> |debug_pc<11>   |   18.931|
+debug_input<1> |debug_pc<12>   |   22.289|
+debug_input<1> |debug_pc<13>   |   21.246|
+debug_input<1> |debug_pc<14>   |   21.543|
+debug_input<1> |debug_pc<15>   |   21.166|
+debug_input<2> |debug_pc<0>    |   17.802|
+debug_input<2> |debug_pc<1>    |   18.567|
+debug_input<2> |debug_pc<2>    |   16.472|
+debug_input<2> |debug_pc<3>    |   18.120|
+debug_input<2> |debug_pc<4>    |   18.161|
+debug_input<2> |debug_pc<5>    |   17.583|
+debug_input<2> |debug_pc<6>    |   17.340|
+debug_input<2> |debug_pc<7>    |   19.184|
+debug_input<2> |debug_pc<8>    |   20.498|
+debug_input<2> |debug_pc<9>    |   17.985|
+debug_input<2> |debug_pc<10>   |   17.550|
+debug_input<2> |debug_pc<11>   |   18.285|
+debug_input<2> |debug_pc<12>   |   22.549|
+debug_input<2> |debug_pc<13>   |   20.517|
+debug_input<2> |debug_pc<14>   |   21.311|
+debug_input<2> |debug_pc<15>   |   20.946|
+debug_input<3> |debug_pc<0>    |   19.428|
+debug_input<3> |debug_pc<1>    |   20.645|
+debug_input<3> |debug_pc<2>    |   18.655|
+debug_input<3> |debug_pc<3>    |   20.635|
+debug_input<3> |debug_pc<4>    |   20.421|
+debug_input<3> |debug_pc<5>    |   19.800|
+debug_input<3> |debug_pc<6>    |   19.277|
+debug_input<3> |debug_pc<7>    |   21.200|
+debug_input<3> |debug_pc<8>    |   22.781|
+debug_input<3> |debug_pc<9>    |   20.007|
+debug_input<3> |debug_pc<10>   |   19.814|
+debug_input<3> |debug_pc<11>   |   21.057|
+debug_input<3> |debug_pc<12>   |   25.466|
+debug_input<3> |debug_pc<13>   |   23.408|
+debug_input<3> |debug_pc<14>   |   24.228|
+debug_input<3> |debug_pc<15>   |   23.863|
+debug_input<4> |debug_pc<0>    |   15.459|
+debug_input<4> |debug_pc<1>    |   15.525|
+debug_input<4> |debug_pc<2>    |   14.263|
+debug_input<4> |debug_pc<3>    |   15.151|
+debug_input<4> |debug_pc<4>    |   15.422|
+debug_input<4> |debug_pc<5>    |   15.507|
+debug_input<4> |debug_pc<6>    |   14.255|
+debug_input<4> |debug_pc<7>    |   15.712|
+debug_input<4> |debug_pc<8>    |   15.478|
+debug_input<4> |debug_pc<9>    |   15.651|
+debug_input<4> |debug_pc<10>   |   15.609|
+debug_input<4> |debug_pc<11>   |   15.392|
+debug_input<4> |debug_pc<12>   |   17.471|
+debug_input<4> |debug_pc<13>   |   16.680|
+debug_input<4> |debug_pc<14>   |   16.853|
+debug_input<4> |debug_pc<15>   |   16.516|
+debug_input<5> |debug_pc<0>    |   15.487|
+debug_input<5> |debug_pc<1>    |   15.553|
+debug_input<5> |debug_pc<2>    |   14.291|
+debug_input<5> |debug_pc<3>    |   15.179|
+debug_input<5> |debug_pc<4>    |   15.450|
+debug_input<5> |debug_pc<5>    |   15.535|
+debug_input<5> |debug_pc<6>    |   14.283|
+debug_input<5> |debug_pc<7>    |   15.740|
+debug_input<5> |debug_pc<8>    |   15.506|
+debug_input<5> |debug_pc<9>    |   15.679|
+debug_input<5> |debug_pc<10>   |   15.637|
+debug_input<5> |debug_pc<11>   |   15.420|
+debug_input<5> |debug_pc<12>   |   17.499|
+debug_input<5> |debug_pc<13>   |   16.708|
+debug_input<5> |debug_pc<14>   |   16.881|
+debug_input<5> |debug_pc<15>   |   16.544|
+debug_input<6> |debug_pc<0>    |   15.486|
+debug_input<6> |debug_pc<1>    |   15.552|
+debug_input<6> |debug_pc<2>    |   14.290|
+debug_input<6> |debug_pc<3>    |   15.178|
+debug_input<6> |debug_pc<4>    |   15.449|
+debug_input<6> |debug_pc<5>    |   15.534|
+debug_input<6> |debug_pc<6>    |   14.282|
+debug_input<6> |debug_pc<7>    |   15.739|
+debug_input<6> |debug_pc<8>    |   15.505|
+debug_input<6> |debug_pc<9>    |   15.678|
+debug_input<6> |debug_pc<10>   |   15.636|
+debug_input<6> |debug_pc<11>   |   15.419|
+debug_input<6> |debug_pc<12>   |   17.498|
+debug_input<6> |debug_pc<13>   |   16.707|
+debug_input<6> |debug_pc<14>   |   16.880|
+debug_input<6> |debug_pc<15>   |   16.543|
+debug_input<7> |debug_pc<0>    |   14.490|
+debug_input<7> |debug_pc<1>    |   14.556|
+debug_input<7> |debug_pc<2>    |   13.294|
+debug_input<7> |debug_pc<3>    |   14.182|
+debug_input<7> |debug_pc<4>    |   14.453|
+debug_input<7> |debug_pc<5>    |   14.538|
+debug_input<7> |debug_pc<6>    |   13.286|
+debug_input<7> |debug_pc<7>    |   14.743|
+debug_input<7> |debug_pc<8>    |   14.509|
+debug_input<7> |debug_pc<9>    |   14.682|
+debug_input<7> |debug_pc<10>   |   14.640|
+debug_input<7> |debug_pc<11>   |   14.423|
+debug_input<7> |debug_pc<12>   |   16.502|
+debug_input<7> |debug_pc<13>   |   15.711|
+debug_input<7> |debug_pc<14>   |   15.884|
+debug_input<7> |debug_pc<15>   |   15.547|
+debug_input<8> |debug_pc<0>    |   15.823|
+debug_input<8> |debug_pc<1>    |   15.889|
+debug_input<8> |debug_pc<2>    |   14.627|
+debug_input<8> |debug_pc<3>    |   15.515|
+debug_input<8> |debug_pc<4>    |   15.786|
+debug_input<8> |debug_pc<5>    |   15.871|
+debug_input<8> |debug_pc<6>    |   14.619|
+debug_input<8> |debug_pc<7>    |   16.076|
+debug_input<8> |debug_pc<8>    |   15.842|
+debug_input<8> |debug_pc<9>    |   16.015|
+debug_input<8> |debug_pc<10>   |   15.973|
+debug_input<8> |debug_pc<11>   |   15.756|
+debug_input<8> |debug_pc<12>   |   17.835|
+debug_input<8> |debug_pc<13>   |   17.044|
+debug_input<8> |debug_pc<14>   |   17.217|
+debug_input<8> |debug_pc<15>   |   16.880|
+debug_input<9> |debug_pc<0>    |   15.445|
+debug_input<9> |debug_pc<1>    |   15.511|
+debug_input<9> |debug_pc<2>    |   14.249|
+debug_input<9> |debug_pc<3>    |   15.137|
+debug_input<9> |debug_pc<4>    |   15.408|
+debug_input<9> |debug_pc<5>    |   15.493|
+debug_input<9> |debug_pc<6>    |   14.241|
+debug_input<9> |debug_pc<7>    |   15.698|
+debug_input<9> |debug_pc<8>    |   15.464|
+debug_input<9> |debug_pc<9>    |   15.637|
+debug_input<9> |debug_pc<10>   |   15.595|
+debug_input<9> |debug_pc<11>   |   15.378|
+debug_input<9> |debug_pc<12>   |   17.457|
+debug_input<9> |debug_pc<13>   |   16.666|
+debug_input<9> |debug_pc<14>   |   16.839|
+debug_input<9> |debug_pc<15>   |   16.502|
+debug_input<10>|debug_pc<0>    |   16.012|
+debug_input<10>|debug_pc<1>    |   16.078|
+debug_input<10>|debug_pc<2>    |   14.816|
+debug_input<10>|debug_pc<3>    |   15.704|
+debug_input<10>|debug_pc<4>    |   15.975|
+debug_input<10>|debug_pc<5>    |   16.060|
+debug_input<10>|debug_pc<6>    |   14.808|
+debug_input<10>|debug_pc<7>    |   16.265|
+debug_input<10>|debug_pc<8>    |   16.031|
+debug_input<10>|debug_pc<9>    |   16.204|
+debug_input<10>|debug_pc<10>   |   16.162|
+debug_input<10>|debug_pc<11>   |   15.945|
+debug_input<10>|debug_pc<12>   |   18.024|
+debug_input<10>|debug_pc<13>   |   17.233|
+debug_input<10>|debug_pc<14>   |   17.406|
+debug_input<10>|debug_pc<15>   |   17.069|
+debug_input<11>|debug_pc<0>    |   15.795|
+debug_input<11>|debug_pc<1>    |   15.861|
+debug_input<11>|debug_pc<2>    |   14.599|
+debug_input<11>|debug_pc<3>    |   15.487|
+debug_input<11>|debug_pc<4>    |   15.758|
+debug_input<11>|debug_pc<5>    |   15.843|
+debug_input<11>|debug_pc<6>    |   14.591|
+debug_input<11>|debug_pc<7>    |   16.048|
+debug_input<11>|debug_pc<8>    |   15.814|
+debug_input<11>|debug_pc<9>    |   15.987|
+debug_input<11>|debug_pc<10>   |   15.945|
+debug_input<11>|debug_pc<11>   |   15.728|
+debug_input<11>|debug_pc<12>   |   17.807|
+debug_input<11>|debug_pc<13>   |   17.016|
+debug_input<11>|debug_pc<14>   |   17.189|
+debug_input<11>|debug_pc<15>   |   16.852|
+debug_input<12>|debug_pc<0>    |   18.347|
+debug_input<12>|debug_pc<1>    |   19.551|
+debug_input<12>|debug_pc<2>    |   17.122|
+debug_input<12>|debug_pc<3>    |   19.008|
+debug_input<12>|debug_pc<4>    |   19.382|
+debug_input<12>|debug_pc<5>    |   19.007|
+debug_input<12>|debug_pc<6>    |   18.311|
+debug_input<12>|debug_pc<7>    |   19.307|
+debug_input<12>|debug_pc<8>    |   20.979|
+debug_input<12>|debug_pc<9>    |   19.044|
+debug_input<12>|debug_pc<10>   |   18.238|
+debug_input<12>|debug_pc<11>   |   19.279|
+debug_input<12>|debug_pc<12>   |   22.491|
+debug_input<12>|debug_pc<13>   |   21.594|
+debug_input<12>|debug_pc<14>   |   21.891|
+debug_input<12>|debug_pc<15>   |   20.935|
+debug_input<13>|debug_pc<0>    |   19.179|
+debug_input<13>|debug_pc<1>    |   19.936|
+debug_input<13>|debug_pc<2>    |   17.915|
+debug_input<13>|debug_pc<3>    |   19.929|
+debug_input<13>|debug_pc<4>    |   20.552|
+debug_input<13>|debug_pc<5>    |   19.203|
+debug_input<13>|debug_pc<6>    |   19.233|
+debug_input<13>|debug_pc<7>    |   19.550|
+debug_input<13>|debug_pc<8>    |   21.463|
+debug_input<13>|debug_pc<9>    |   19.800|
+debug_input<13>|debug_pc<10>   |   19.622|
+debug_input<13>|debug_pc<11>   |   19.781|
+debug_input<13>|debug_pc<12>   |   23.475|
+debug_input<13>|debug_pc<13>   |   21.966|
+debug_input<13>|debug_pc<14>   |   22.654|
+debug_input<13>|debug_pc<15>   |   22.230|
+debug_input<14>|debug_pc<0>    |   18.276|
+debug_input<14>|debug_pc<1>    |   19.480|
+debug_input<14>|debug_pc<2>    |   17.051|
+debug_input<14>|debug_pc<3>    |   18.937|
+debug_input<14>|debug_pc<4>    |   19.311|
+debug_input<14>|debug_pc<5>    |   18.936|
+debug_input<14>|debug_pc<6>    |   18.240|
+debug_input<14>|debug_pc<7>    |   19.236|
+debug_input<14>|debug_pc<8>    |   21.430|
+debug_input<14>|debug_pc<9>    |   18.973|
+debug_input<14>|debug_pc<10>   |   18.167|
+debug_input<14>|debug_pc<11>   |   19.208|
+debug_input<14>|debug_pc<12>   |   23.427|
+debug_input<14>|debug_pc<13>   |   21.523|
+debug_input<14>|debug_pc<14>   |   22.189|
+debug_input<14>|debug_pc<15>   |   21.855|
+debug_input<15>|debug_pc<0>    |   18.394|
+debug_input<15>|debug_pc<1>    |   19.563|
+debug_input<15>|debug_pc<2>    |   17.573|
+debug_input<15>|debug_pc<3>    |   19.553|
+debug_input<15>|debug_pc<4>    |   19.767|
+debug_input<15>|debug_pc<5>    |   18.718|
+debug_input<15>|debug_pc<6>    |   18.448|
+debug_input<15>|debug_pc<7>    |   20.118|
+debug_input<15>|debug_pc<8>    |   21.699|
+debug_input<15>|debug_pc<9>    |   19.015|
+debug_input<15>|debug_pc<10>   |   18.837|
+debug_input<15>|debug_pc<11>   |   19.975|
+debug_input<15>|debug_pc<12>   |   24.384|
+debug_input<15>|debug_pc<13>   |   22.326|
+debug_input<15>|debug_pc<14>   |   23.146|
+debug_input<15>|debug_pc<15>   |   22.781|
+---------------+---------------+---------+
+
+
+Analysis completed Mon Dec 08 16:58:19 2014 
+--------------------------------------------------------------------------------
+
+Trace Settings:
+-------------------------
+Trace Settings 
+
+Peak Memory Usage: 203 MB
+
+
+

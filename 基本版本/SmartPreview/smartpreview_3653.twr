@@ -1,0 +1,852 @@
+1 logic loop found and disabled.
+
+  ----------------------------------------------------------------------
+ ! Warning: The following connections close logic loops, and some paths !
+ !          through these connections may not be analyzed. To better    !
+ !          understand the logic associated with these loops, run a     !
+ !          Analyze Against User-Defined End-Point Analysis inside      !
+ !          Timing Analyzer (timingan) with the listed signal as a      !
+ !          source NET (*signal_name). The Timing Report will display   !
+ !          all the paths associated with this signal and the logic     !
+ !          loop will be reported.                                      !
+ !                                                                      !
+ ! Signal                            Driver            Load             !
+ ! --------------------------------  ----------------  ---------------- !
+ ! ualu/tmp_res_15_0_shift0001<15>   SLICE_X74Y46.Y    SLICE_X74Y46.G1  !
+  ---------------------------------------------------------------------- 
+
+
+================================================================================
+Timing constraint: Autotimespec constraint for clock net clk_ori_IBUF
+For more information, see Period Analysis in the Timing Closure User Guide (UG612).
+
+ 7550268 paths analyzed, 1111 endpoints analyzed, 14 failing endpoints
+ 14 timing errors detected. (14 setup errors, 0 hold errors, 0 component switching limit errors)
+ Minimum period is  21.354ns.
+--------------------------------------------------------------------------------
+Slack:                  -0.337 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_Imm_2 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.354 (Levels of Logic = 17)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_Imm_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.F3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000161
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X90Y41.CE      net (fanout=43)       1.353   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X90Y41.CLK     Tceck                 0.555   uforwardAE/y_mux0000<14>
+                                                       uid_exe_register/Out_Imm_2
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.337 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_Imm_2 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.354 (Levels of Logic = 17)
+  Clock Path Skew:      0.000ns
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_Imm_2
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.G3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000162
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X90Y41.CE      net (fanout=43)       1.353   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X90Y41.CLK     Tceck                 0.555   uforwardAE/y_mux0000<14>
+                                                       uid_exe_register/Out_Imm_2
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.273 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_ALU_B_10 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.287 (Levels of Logic = 17)
+  Clock Path Skew:      -0.003ns (0.253 - 0.256)
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_ALU_B_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.G3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000162
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X78Y43.CE      net (fanout=43)       1.286   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X78Y43.CLK     Tceck                 0.555   uid_exe_register/Out_ALU_B<11>
+                                                       uid_exe_register/Out_ALU_B_10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.273 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_ALU_B_11 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.287 (Levels of Logic = 17)
+  Clock Path Skew:      -0.003ns (0.253 - 0.256)
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_ALU_B_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.G3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000162
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X78Y43.CE      net (fanout=43)       1.286   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X78Y43.CLK     Tceck                 0.555   uid_exe_register/Out_ALU_B<11>
+                                                       uid_exe_register/Out_ALU_B_11
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.273 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_ALU_B_10 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.287 (Levels of Logic = 17)
+  Clock Path Skew:      -0.003ns (0.253 - 0.256)
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_ALU_B_10
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.F3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000161
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X78Y43.CE      net (fanout=43)       1.286   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X78Y43.CLK     Tceck                 0.555   uid_exe_register/Out_ALU_B<11>
+                                                       uid_exe_register/Out_ALU_B_10
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.273 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_ALU_B_11 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.287 (Levels of Logic = 17)
+  Clock Path Skew:      -0.003ns (0.253 - 0.256)
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_ALU_B_11
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.F3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000161
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X78Y43.CE      net (fanout=43)       1.286   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X78Y43.CLK     Tceck                 0.555   uid_exe_register/Out_ALU_B<11>
+                                                       uid_exe_register/Out_ALU_B_11
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.263 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_ALU_Op_1 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.278 (Levels of Logic = 17)
+  Clock Path Skew:      -0.002ns (0.254 - 0.256)
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_ALU_Op_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.G3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000162
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X76Y37.CE      net (fanout=43)       1.277   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X76Y37.CLK     Tceck                 0.555   forwardbe<0>
+                                                       uid_exe_register/Out_ALU_Op_1
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.263 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_Imm_5 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.278 (Levels of Logic = 17)
+  Clock Path Skew:      -0.002ns (0.254 - 0.256)
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_Imm_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.F3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000161
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X76Y37.CE      net (fanout=43)       1.277   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X76Y37.CLK     Tceck                 0.555   forwardbe<0>
+                                                       uid_exe_register/Out_Imm_5
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.263 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_ALU_Op_1 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.278 (Levels of Logic = 17)
+  Clock Path Skew:      -0.002ns (0.254 - 0.256)
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_ALU_Op_1
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.F3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000161
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X76Y37.CE      net (fanout=43)       1.277   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X76Y37.CLK     Tceck                 0.555   forwardbe<0>
+                                                       uid_exe_register/Out_ALU_Op_1
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+Slack:                  -0.263 (requirement - (data path - clock path skew + uncertainty))
+  Source:               uid_exe_register/Out_Rs_0 (FF)
+  Destination:          uid_exe_register/Out_Imm_5 (FF)
+  Requirement:          21.017
+  Data Path Delay:      21.278 (Levels of Logic = 17)
+  Clock Path Skew:      -0.002ns (0.254 - 0.256)
+  Source Clock:         clk_ori_IBUF rising at 0.000ns
+  Destination Clock:    clk_ori_IBUF rising at 21.017ns
+  Clock Uncertainty:    0.000
+
+  Maximum Data Path: uid_exe_register/Out_Rs_0 to uid_exe_register/Out_Imm_5
+    Location             Delay type         Delay(ns)  Physical Resource
+                                                       Logical Resource(s)
+    -------------------------------------------------  -------------------
+    SLICE_X79Y40.YQ      Tcko                  0.587   uid_exe_register/Out_Rs<1>
+                                                       uid_exe_register/Out_Rs_0
+    SLICE_X79Y40.G1      net (fanout=3)        0.651   uid_exe_register/Out_Rs<0>
+    SLICE_X79Y40.Y       Tilo                  0.704   uid_exe_register/Out_Rs<1>
+                                                       uhazard/forwardaE<0>30
+    SLICE_X79Y33.G3      net (fanout=1)        0.558   uhazard/forwardaE<0>30/O
+    SLICE_X79Y33.Y       Tilo                  0.704   ualu/tmp_res_13_mux000056
+                                                       uhazard/forwardaE<0>74_SW0
+    SLICE_X90Y39.F1      net (fanout=1)        1.096   N747
+    SLICE_X90Y39.X       Tilo                  0.759   forwardae<0>
+                                                       uhazard/forwardaE<0>88
+    SLICE_X78Y44.G3      net (fanout=33)       1.167   forwardae<0>
+    SLICE_X78Y44.X       Tif5x                 1.152   uforwardAE/y_mux0000<1>
+                                                       uforwardAE/Mmux_y_mux0000162
+                                                       uforwardAE/Mmux_y_mux000016_f5
+    SLICE_X78Y35.G1      net (fanout=16)       0.820   uforwardAE/y_mux0000<1>
+    SLICE_X78Y35.COUT    Topcyg                1.131   ualu/tmp_res_15_0_sub0000<0>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_lut<1>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<1>
+    SLICE_X78Y36.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<2>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<3>
+    SLICE_X78Y37.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<4>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<5>
+    SLICE_X78Y38.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<6>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<7>
+    SLICE_X78Y39.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<8>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<9>
+    SLICE_X78Y40.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<10>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<11>
+    SLICE_X78Y41.COUT    Tbyp                  0.130   ualu/tmp_res_15_0_sub0000<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<12>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.CIN     net (fanout=1)        0.000   ualu/Msub_tmp_res_15_0_sub0000_cy<13>
+    SLICE_X78Y42.Y       Tciny                 0.883   ualu/tmp_res_15_0_sub0000<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_cy<14>
+                                                       ualu/Msub_tmp_res_15_0_sub0000_xor<15>
+    SLICE_X78Y28.F4      net (fanout=1)        0.656   ualu/tmp_res_15_0_sub0000<15>
+    SLICE_X78Y28.X       Tilo                  0.759   ualu/tmp_res_15_mux0000211
+                                                       ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.F1      net (fanout=1)        0.848   ualu/tmp_res_15_mux0000211
+    SLICE_X90Y32.X       Tilo                  0.759   N451
+                                                       ualu/tmp_res_15_mux000055_SW0_SW0_SW0
+    SLICE_X75Y35.F3      net (fanout=1)        0.929   N451
+    SLICE_X75Y35.X       Tilo                  0.704   uram2/RAM2_Data_cmp_eq0000_inv
+                                                       ualu/tmp_res_15_mux0000244
+    SLICE_X69Y29.G4      net (fanout=4)        0.890   ALU_ResultE<15>
+    SLICE_X69Y29.Y       Tilo                  0.704   uif_id_register/N6
+                                                       uhazard/swstall_and00001_1
+    SLICE_X77Y39.BX      net (fanout=16)       1.466   uhazard/swstall_and00001
+    SLICE_X77Y39.X       Tbxx                  0.739   umem_wb_register/Out_ALUResult<13>
+                                                       uid_exe_register/Out_ALU_Op_and00001
+    SLICE_X76Y37.CE      net (fanout=43)       1.277   uid_exe_register/Out_ALU_Op_and0000
+    SLICE_X76Y37.CLK     Tceck                 0.555   forwardbe<0>
+                                                       uid_exe_register/Out_Imm_5
+    -------------------------------------------------  ---------------------------
+
+--------------------------------------------------------------------------------
+
+
+1 constraint not met.
+
+
+

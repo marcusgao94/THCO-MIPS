@@ -1,0 +1,17 @@
+#-----------------------------------------------------------
+# PlanAhead v14.6 (64-bit)
+# Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+# Start of session at: Sun Dec 07 09:11:04 2014
+# Process ID: 42312
+# Log file: D:/ISE/ExcitedCPU/planAhead_run_4/planAhead.log
+# Journal file: D:/ISE/ExcitedCPU/planAhead_run_4/planAhead.jou
+#-----------------------------------------------------------
+start_gui
+source D:/ISE/ExcitedCPU/pa.fromNetlist.tcl
+startgroup
+set_property package_pin U6 [get_ports ps2_clk]
+endgroup
+startgroup
+set_property package_pin V6 [get_ports ps2_data]
+endgroup
+save_constraints

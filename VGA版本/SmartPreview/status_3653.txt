@@ -1,0 +1,12 @@
+
+STATUS:
+	+------------------------------------+--------------------------------+
+	| Most recent SmartPreview on disk:  |                        CPU.ncd |
+	| Fully placed:                      |                            YES |
+	| Fully routed:                      |                            YES |
+	| SmartPreview status:               |               ready for bitgen |
+	| Timing score:                      |                           3653 |
+	| Timing errors:                     |                             21 |
+	| Number of failing constraints:     |                              1 |
+	+------------------------------------+--------------------------------+
+

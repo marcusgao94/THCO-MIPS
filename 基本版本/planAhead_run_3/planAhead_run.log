@@ -1,0 +1,198 @@
+
+****** PlanAhead v14.6 (64-bit)
+  **** Build 269223 by xbuild on Wed Jun  5 11:14:03 MDT 2013
+    ** Copyright 1986-1999, 2001-2012 Xilinx, Inc. All Rights Reserved.
+
+INFO: [Common 17-78] Attempting to get a license: PlanAhead
+INFO: [Common 17-290] Got license for PlanAhead
+INFO: [Device 21-36] Loading parts and site information from D:/ISE/14.6/ISE_DS/PlanAhead/data/parts/arch.xml
+Parsing RTL primitives file [D:/ISE/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+Finished parsing RTL primitives file [D:/ISE/14.6/ISE_DS/PlanAhead/data/parts/xilinx/rtl/prims/rtl_prims.xml]
+start_gui
+source D:/ISE/ExcitedCPU/pa.fromNetlist.tcl
+# create_project -name ExcitedCPU -dir "D:/ISE/ExcitedCPU/planAhead_run_3" -part xc3s1200efg320-4
+# set_property design_mode GateLvl [get_property srcset [current_run -impl]]
+# set_property edif_top_file "D:/ISE/ExcitedCPU/CPU.ngc" [ get_property srcset [ current_run ] ]
+# add_files -norecurse { {D:/ISE/ExcitedCPU} }
+# set_param project.pinAheadLayout  yes
+# set_property target_constrs_file "CPU.ucf" [current_fileset -constrset]
+Adding file 'D:/ISE/ExcitedCPU/CPU.ucf' to fileset 'constrs_1'
+# add_files [list {CPU.ucf}] -fileset [get_property constrset [current_run]]
+# link_design
+Design is defaulting to srcset: sources_1
+Design is defaulting to constrset: constrs_1
+Design is defaulting to project part: xc3s1200efg320-4
+Release 14.6 - ngc2edif P.68d (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+Reading design CPU.ngc ...
+WARNING:NetListWriters:298 - No output is written to CPU.xncf, ignored.
+Processing design ...
+   Preping design's networks ...
+   Preping design's macros ...
+WARNING:NetListWriters:306 - Signal bus uid_exe_register/Out_Imm<15 : 0> on
+   block CPU is not reconstructed, because there are some missing bus signals.
+  finished :Prep
+Writing EDIF netlist file CPU.edif ...
+ngc2edif: Total memory usage is 83004 kilobytes
+
+Parsing EDIF File [./planAhead_run_3/ExcitedCPU.data/cache/CPU_ngc_zx.edif]
+Finished Parsing EDIF File [./planAhead_run_3/ExcitedCPU.data/cache/CPU_ngc_zx.edif]
+INFO: [Designutils 20-910] Reading macro library D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn
+Parsing EDIF File [D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+Finished Parsing EDIF File [D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/hd_int_macros.edn]
+WARNING: [Netlist 29-43] Netlist 'CPU' is not ideal for floorplanning, since the cellview 'CPU' defined in file 'CPU.ngc' contains large number of primitives.  Please consider enabling hierarchy in synthesis if you want to do floorplanning.
+Loading clock regions from D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/ClockRegion.xml
+Loading clock buffers from D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/ClockBuffers.xml
+Loading package from D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/fg320/Package.xml
+Loading io standards from D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/IOStandards.xml
+INFO: [Device 21-19] Loading pkg sso from D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/xc3s1200e/fg320/SSORules.xml
+Loading list of drcs for the architecture : D:/ISE/14.6/ISE_DS/PlanAhead/data\./parts/xilinx/spartan3e/spartan3e/drc.xml
+INFO: [Timing 38-77] Reading timing library D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+INFO: [Timing 38-34] Done reading timing library D:/ISE/14.6/ISE_DS/PlanAhead/data\parts/xilinx/spartan3e/spartan3e/spartan3e-4.lib.
+Parsing UCF File [D:/ISE/ExcitedCPU/CPU.ucf]
+Finished Parsing UCF File [D:/ISE/ExcitedCPU/CPU.ucf]
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Phase 0 | Netlist Checksum: 9f276878
+link_design: Time (s): elapsed = 00:00:08 . Memory (MB): peak = 581.367 ; gain = 135.938
+startgroup
+set_property package_pin K4 [get_ports {flash_addr[21]}]
+endgroup
+startgroup
+set_property package_pin K5 [get_ports {flash_addr[20]}]
+endgroup
+startgroup
+set_property package_pin K6 [get_ports {flash_addr[19]}]
+endgroup
+startgroup
+set_property package_pin L1 [get_ports {flash_addr[18]}]
+endgroup
+startgroup
+set_property package_pin L2 [get_ports {flash_addr[17]}]
+endgroup
+startgroup
+set_property package_pin L3 [get_ports {flash_addr[16]}]
+endgroup
+startgroup
+set_property package_pin L4 [get_ports {flash_addr[15]}]
+endgroup
+startgroup
+set_property package_pin L5 [get_ports {flash_addr[14]}]
+endgroup
+startgroup
+set_property package_pin L6 [get_ports {flash_addr[13]}]
+endgroup
+startgroup
+set_property package_pin M3 [get_ports {flash_addr[12]}]
+endgroup
+startgroup
+set_property package_pin M4 [get_ports {flash_addr[11]}]
+endgroup
+startgroup
+set_property package_pin M5 [get_ports {flash_addr[10]}]
+endgroup
+startgroup
+set_property package_pin M6 [get_ports {flash_addr[9]}]
+endgroup
+startgroup
+set_property package_pin N4 [get_ports {flash_addr[8]}]
+endgroup
+startgroup
+set_property package_pin N5 [get_ports {flash_addr[7]}]
+endgroup
+startgroup
+set_property package_pin P1 [get_ports {flash_addr[6]}]
+endgroup
+startgroup
+set_property package_pin P2 [get_ports {flash_addr[5]}]
+endgroup
+startgroup
+set_property package_pin P3 [get_ports {flash_addr[4]}]
+endgroup
+startgroup
+set_property package_pin P4 [get_ports {flash_addr[3]}]
+endgroup
+startgroup
+set_property package_pin R2 [get_ports {flash_addr[2]}]
+endgroup
+startgroup
+set_property package_pin R3 [get_ports {flash_addr[1]}]
+endgroup
+startgroup
+set_property package_pin T1 [get_ports {flash_addr[0]}]
+endgroup
+startgroup
+set_property package_pin F1 [get_ports {flash_data[15]}]
+endgroup
+startgroup
+set_property package_pin F2 [get_ports {flash_data[14]}]
+endgroup
+startgroup
+set_property package_pin G3 [get_ports {flash_data[13]}]
+endgroup
+startgroup
+set_property package_pin G4 [get_ports {flash_data[12]}]
+endgroup
+startgroup
+set_property package_pin G5 [get_ports {flash_data[11]}]
+endgroup
+startgroup
+set_property package_pin G6 [get_ports {flash_data[10]}]
+endgroup
+startgroup
+set_property package_pin H1 [get_ports {flash_data[9]}]
+endgroup
+startgroup
+set_property package_pin H2 [get_ports {flash_data[8]}]
+endgroup
+startgroup
+set_property package_pin H3 [get_ports {flash_data[7]}]
+endgroup
+startgroup
+set_property package_pin H4 [get_ports {flash_data[6]}]
+endgroup
+startgroup
+set_property package_pin H5 [get_ports {flash_data[5]}]
+endgroup
+startgroup
+set_property package_pin H6 [get_ports {flash_data[4]}]
+endgroup
+startgroup
+set_property package_pin J1 [get_ports {flash_data[3]}]
+endgroup
+startgroup
+set_property package_pin J2 [get_ports {flash_data[2]}]
+endgroup
+startgroup
+set_property package_pin J4 [get_ports {flash_data[1]}]
+endgroup
+startgroup
+set_property package_pin J5 [get_ports {flash_data[0]}]
+endgroup
+startgroup
+set_property package_pin C1 [get_ports flash_byte]
+endgroup
+startgroup
+set_property package_pin E4 [get_ports flash_ce]
+endgroup
+startgroup
+set_property package_pin E1 [get_ports flash_oe]
+endgroup
+startgroup
+set_property package_pin D1 [get_ports flash_rp]
+endgroup
+startgroup
+set_property package_pin C2 [get_ports flash_vpen]
+endgroup
+startgroup
+set_property package_pin D4 [get_ports flash_we]
+endgroup
+startgroup
+set_property package_pin U9 [get_ports bootstart]
+endgroup
+save_constraints
+exit
+ERROR: [Common 17-39] 'stop_gui' failed due to earlier errors.
+INFO: [Common 17-206] Exiting PlanAhead at Sun Dec 07 07:00:51 2014...
+INFO: [Common 17-83] Releasing license: PlanAhead
